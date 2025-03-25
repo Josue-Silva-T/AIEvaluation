@@ -44,6 +44,8 @@ analize.place(x=613, y=450, width=151, height=46)
 def GetNameArchive():
     global Archive
     Archive = nameArchive.get()
+    text = open(Archive)
+    exam.insert(INSERT, text.read())
 
 getArchive = Button(myFrame, text="Archive", command=GetNameArchive, fg="white", font=("Arial", 15))
 getArchive.config(bg="#1E90FF")
