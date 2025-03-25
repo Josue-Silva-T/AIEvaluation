@@ -16,7 +16,7 @@ myFrame.pack(fill="both", expand="True")
 myFrame.config(width="1400", height="900")
 
 #Buscador
-nameArchive = Entry(myFrame)
+nameArchive = Entry(myFrame, font=("Arial", 15))
 nameArchive.place(x=494, y=41, width=259, height=36)
 
 examLabel = Label(myFrame, text="Exam", fg="white", font=("Arial",20))
@@ -45,7 +45,7 @@ def GetNameArchive():
     global Archive
     Archive = nameArchive.get()
 
-getArchive = Button(myFrame, text="Archive", command=GetNameArchive)
+getArchive = Button(myFrame, text="Archive", command=GetNameArchive, fg="white", font=("Arial", 15))
 getArchive.config(bg="#1E90FF")
 getArchive.place(x=753, y=41, width=131, height=36)
 
