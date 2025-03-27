@@ -1,0 +1,49 @@
+Es el tipo de razonamiento que contrasta con el razonamiento deductivo estándar, este último es el más utilizado en matemáticas, una de las aplicaciones más comunes para este es el juego clásico llamado SODOKU, ya que lleva al razonamiento de manera deductiva, es decir se utilizan hechos conocidos para llegar a una solución o a una conclusión lógica que es de antemano verdadera.  
+El razonamiento inductivo es el que generaliza y conjetura las soluciones, se convierten estas en posibles, el cual es basado en la observación y no en la lógica, los seres humanos al momento del razonamiento, utilizamos ambos, el deductivo y el inductivo. 
+La mayoría de los sistemas lógicos tienen una relación de consecuencia monótona, lo que quiere decir es que el agregar una fórmula a una teoría, nunca se produce una reducción de su conjunto de consecuencias. 
+Intuitivamente, la monotonicidad indica que el agregar nuevos conocimientos no se reduce el conjunto de las cosas conocidas. Por ejemplo: Donde A es una fórmula cualquiera y Ã y Ä son conjuntos de fórmulas cualesquiera. 
+Una lógica monótona no puede manejar varios tipos de razonamiento tales como: 
+el razonamiento por defecto, el cual nos dice que los hechos pueden ser conocidos únicamente por la carencia de evidencia de lo contrario,  
+el razonamiento abductivo  el cual dice que los hechos sólo se deducen en calidad de explicaciones probables,  
+el razonamiento acerca del conocimiento, en donde la ignorancia de un hecho debe ser retractada cuando el hecho sea conocido y  
+la revisión de creencias en donde el nuevo conocimiento puede contradecir creencias anteriores, obligando a revisarlas.  
+Estas limitaciones son un inconveniente en gran cantidad de problemas que se presentan en inteligencia artificial, que tienen un carácter no monótono. Un razonamiento se llama monótono cuando a lo largo del proceso el conjunto de «cosas sabidas» es siempre creciente. 
+Pero en la realidad suele ocurrir que, a medida que avanza el proceso de inferencias, nuevas evidencias o acciones del mismo sistema anulan premisas o conclusiones anteriores, y para formalizar esto se necesita una lógica no monótona. Un proceso frecuente es el razonamiento por defecto: suponer que algo es verdadero (o falso) mientras no haya evidencia de lo contrario. 
+El razonamiento monótono es parte de la lógica clásica y abarca los siguientes temas: 
+Deducción lógica que consiste que a partir de unas premisas, representadas con símbolos y a través de unas reglas obtendremos siempre una conclusión 
+Los símbolos representan los conectores o conjuntores (¬, &, ˅, ->, <=>), se encuentran letras enunciativas (p, r, s) y símbolos auxiliares ((), |-). 
+Importancia del Razonamiento Monótono en la Inteligencia Artificial 
+El razonamiento monótono es un pilar fundamental en la inteligencia artificial (IA) y en los sistemas basados en el conocimiento. Su principal ventaja es que permite realizar inferencias lógicas seguras y consistentes. Sin embargo, en aplicaciones más avanzadas, su rigidez puede ser una limitación, lo que ha llevado al desarrollo de modelos más flexibles, como el razonamiento no monótono. 
+Algunas áreas donde el razonamiento monótono tiene aplicaciones directas incluyen: 
+Sistemas Expertos 
+Son programas de IA que toman decisiones basadas en reglas lógicas predefinidas. Estos sistemas usan el razonamiento monótono para garantizar que las conclusiones sean consistentes y no cambien con nueva información. 
+Ejemplo: 
+Un sistema experto para diagnóstico médico puede incluir reglas como: 
+"Si un paciente tiene fiebre alta y tos persistente, entonces podría tener neumonía." 
+Esta conclusión se mantiene, sin importar si más tarde se añaden otros síntomas o enfermedades que el paciente pueda tener. 
+Limitaciones del Razonamiento Monótono 
+Aunque es útil en muchos sistemas formales, el razonamiento monótono no es adecuado para entornos dinámicos donde la información cambia constantemente. 
+Las principales limitaciones incluyen: No puede retractarse de conclusiones incorrectas. 
+No maneja incertidumbre ni probabilidades. 
+No permite razonar sobre eventos desconocidos. 
+Por estas razones, en IA se han desarrollado métodos no monótonos, como el razonamiento probabilístico, la lógica difusa y las redes neuronales, que permiten inferencias más adaptativas. 
+Principios del Razonamiento Monótono 
+Conservación del conocimiento: Agregar nuevos axiomas a una teoría nunca invalida las conclusiones previas. 
+Consistencia lógica: Si una conclusión es válida en un momento dado, seguirá siéndolo en el futuro, sin importar la nueva información añadida. 
+Limitaciones del Razonamiento Monótono 
+El razonamiento monótono no es adecuado para ciertos tipos de problemas en inteligencia artificial y otras áreas porque no permite modificar conclusiones previas en función de nueva información. Entre sus principales limitaciones están: 
+Razonamiento por defecto: Cuando se asume un hecho como verdadero solo porque no hay evidencia en contra. 
+Razonamiento abductivo: Se usa para inferir explicaciones probables en ausencia de certeza absoluta. 
+Revisión de creencias: A medida que se obtiene nueva información, pueden surgir contradicciones que obligan a modificar conclusiones previas. 
+Razonamiento epistémico: Relacionado con el conocimiento y la ignorancia, donde se retractan creencias cuando se obtiene nueva evidencia. 
+Ventajas del Razonamiento Monótono 
+Consistencia: Las conclusiones son consistentes y no cambian con nueva información, lo que proporciona un marco estable para el razonamiento. 
+Predictibilidad: Dado que las conclusiones no se revisan, el sistema es predecible y fácil de manejar en contextos donde la información es completa y no cambia. 
+Comparación con el Razonamiento No Monótono 
+El razonamiento no monótono, por el contrario, permite que las conclusiones sean revisadas o retractadas cuando se añade nueva información. Este tipo de razonamiento es más flexible y se utiliza en dominios donde la información es incompleta o puede cambiar, como en la inteligencia artificial y la toma de decisiones en entornos dinámicos. 
+Aplicaciones del Razonamiento Monótono 
+Sistemas Formales: En sistemas formales como la lógica matemática y la teoría de la demostración. 
+Bases de Datos: En bases de datos deductivas donde las consultas se resuelven mediante inferencias lógicas que no cambian con nueva información. 
+Verificación de Software: En la verificación formal de software, donde las propiedades del software se verifican contra un conjunto fijo de especificaciones. 
+Conclusión 
+El razonamiento monótono es un pilar fundamental en la lógica clásica y en sistemas formales donde la consistencia y la predictibilidad son cruciales. Sin embargo, su inflexibilidad lo hace menos adecuado para dominios donde la información es dinámica o incompleta. En contraste, el razonamiento no monótono ofrece una mayor adaptabilidad, lo que es esencial en aplicaciones modernas como la inteligencia artificial y la robótica. 

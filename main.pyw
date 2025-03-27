@@ -3,6 +3,8 @@ from tkinter import *
 
 #Variables
 Archive = ""
+informacion = open("informacion.txt")
+
 
 raiz=Tk()
 
@@ -36,7 +38,7 @@ result = Text(myFrame, width=70, height=40)
 result.place(x=836, y=160, width=502, height=680)
 
 #Boton para Analizar el examen
-analize = Button(myFrame, text="Analize", fg="white", font=("Arial", 20))
+analize = Button(myFrame, text="Analize", fg="white", font=("Arial", 20) command=GetAnalize)
 analize.config(bg="#1E90FF")
 analize.place(x=613, y=450, width=151, height=46)
 
@@ -60,5 +62,9 @@ scoreLabel.config(bg="#121212")
 showScore = Label(myFrame, text=str(score)+"%", fg="#1E90FF", font=("Arial", 40))
 showScore.place(x=660, y=252)
 showScore.config(bg="#121212")
+
+def GetAnalize():
+    global informacion
+
 
 raiz.mainloop()
