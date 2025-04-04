@@ -4,7 +4,7 @@ import utils
 
 #Variables
 Archive = ""
-informacion = open("informacion.txt")
+information = open("informacion.txt")
 
 raiz=Tk()
 
@@ -30,7 +30,13 @@ exam = Text(myFrame, width=70, height=40)
 exam.place(x=40, y=111, width=555, height=458)
 
 def GetAnalize():
-    global informacion
+    global information
+    textC = information.read()
+    examU = exam.get("1.0", END)
+    result = utils.compare(textC, examU)
+    showScore.config(text=f"{result*100:.0f}%")
+
+
 
 #Boton para Analizar el examen
 analize = Button(myFrame, text="Analize", fg="white", font=("Arial", 20), command=GetAnalize)
@@ -55,7 +61,7 @@ scoreLabel = Label(myFrame, text="Score", fg="white", font=("Arial", 40))
 scoreLabel.place(x=623, y=135)
 scoreLabel.config(bg="#121212")
 showScore = Label(myFrame, text=str(score)+"%", fg="#1E90FF", font=("Arial", 40))
-showScore.place(x=669, y=221)
+showScore.place(x=660, y=221)
 showScore.config(bg="#121212")
 
 raiz.mainloop()
